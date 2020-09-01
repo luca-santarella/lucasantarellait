@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Calcolatore guadagno BTC</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script src="js/script.js"></script>
+	</head>
+	<body>
+        <div id="header">
+            <img id="img-stonks" src="images/BTC.png">
+            <div class="bio">
+                <div class="titles">
+                    Calcolatore guadagno BTC
+                </div>
+                <span id="bio-text">
+                    <p>Inserisci la quantità (in BTC) e il prezzo (in euro) per Bitcoin a cui hai acquistato.</p>
+                    <p>Utilizzando il prezzo più recente dello scambio BTC-EUR ti indicherò il tuo guadagno.</p>
+                    
+                    <form id="BTC-form">
+                        <label for="price">Valore:</label><br>
+                        <input type="text" id="value" name="price"><br><br>
+                        <label for="quantity">Quantità:</label><br>
+                        <input type="text" id="quantity" name="quantity"><br><br>
+                    </form> 
+                    <button onclick="compute_profit()">Calcola</button>
+                </span>
+                <div id="result">
+                    
+                </div>
+            </div>
+        </div>
+	</body>
+</html>
+

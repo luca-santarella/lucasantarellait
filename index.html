@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Luca Santarella</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+	</head>
+	<body>
+        <div id="header">
+            <img src="images/propic.jpg">
+            <div class="bio">
+                <div class="titles">
+                    Luca Santarella
+                    <div id="upper-button">
+                    <a href="https://www.linkedin.com/in/luca-santarella-7850341b2/" class="fa fa-linkedin" style ="color:#007bb5"></a>
+                    <a href="https://github.com/luca-santarella/" class="fa fa-github"></a>
+                    <a href="mailto:lucasantarella@hotmail.it" class="fa fa-envelope" style ="color:#fec201"></a>
+                    </div>
+                </div>
+                <span id="bio-text">
+                    <p>Sono interessato a tutto ciò che riguarda le nuove tecnologie e scoperte innovative.</p>
+                    I miei interessi sono nel campo dell'Intelligenza Artificiale e nello sviluppo di applicazioni legate
+                    all'utilizzo di blockchain. 
+                    Vorrei ricoprire un ruolo lavorativo che mi permetta di applicare le conoscenze di informatica acquisite durante gli studi.
+                </span>
+            </div>
+        </div>
+        <div id="section">
+            <span class="titles-section"> Istruzione </span>
+            <!-- hidden text until clicked-->
+            <span class="text">
+                <ul>
+                    <li><b>Laurea in Informatica presso <a href="https://www.unipi.it/">Università di Pisa</a></b></li>
+                </ul>
+                <ul style="list-style: none;">
+                    <li>Titolo della tesi: <a href="https://drive.google.com/file/d/1rZJh7UHgRiklxDaTZokwm4Q7NhAtDOjh/view?usp=sharing">A Cryptocurrency Exchange Services Analysis</a></li>
+                    <li>
+                        Relatore: <a href="https://pages.di.unipi.it/ricci/">Laura Ricci</a> 
+                        <a href="https://scholar.google.it/citations?user=9u78kdMAAAAJ&amp;hl=it">Damiano Di Francesco Maesa</a>
+                    </li>
+                    <li>Votazione finale: 94/110</li>
+                    <li>Data di conseguimento: 26/06/2020</li>
+                </ul>
+                <ul>
+                    <li><b>Diploma di maturità</b></li>
+                </ul>
+                <ul style="list-style: none;">
+                    <li>Istruzione tecnica, indirizzo Informatica</li>
+                    <li>Presso Ferraris-Brunelleschi, Empoli (FI)</li>
+                    <li>Votazione finale: 84/100</li>
+                    <li>Data di conseguimento: 2016</li>
+                </ul>
+            </span>
+        </div>
+        <div id="section">
+            <span class="titles-section"> Esperienze Lavorative </span>
+            <!-- hidden text until clicked-->
+            <span class="text">
+                <ul>
+                    <li><b>Tirocinio Curriculare presso Università di Pisa</b></li>
+                </ul>
+                <ul style="list-style: none;">
+                    <li>Descrizione: Analisi dei principali servizi di exchange per criptovalute mirata a scoprire fenomeni di wash
+                    trading e volume di scambio falsi.</li>
+                    <li>Data: Marzo 2020 - Aprile 2020</li>
+                </ul>
+                <ul>
+                    <li><b>Stage scolastisco presso <a href="https://www.toplan.it/">TopLan</a></b></li>
+                </ul>
+                <ul style="list-style: none;">
+                    <li>Descrizione: Stage scolastico mirato allo sviluppo di una pagina Web</li>
+                    <li>Data: Maggio 2015 - Giugno 2015</li>
+                </ul>
+            </span>
+        </div>
+        <div id="section">
+            <span style="color:#161616;" class="titles-section"> Tools </span>
+            <!-- hidden text until clicked-->
+            <span class="text">
+            <a href="BTC_profit.html">Calcolatore guadagno BTC</a>
+            </span>
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("titles-section");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+</script>
+	</body>
+</html>
+
