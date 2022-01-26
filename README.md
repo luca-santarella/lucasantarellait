@@ -1,3 +1,3 @@
 # lucasantarellait
 
-Repo for my personal web page available at https://lucasantarella.it
+Repo for my personal web page available at www.lucasantarella.it
