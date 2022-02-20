@@ -24,22 +24,21 @@
                 <span id="bio-text">
                     <p>Sono interessato a tutto ciò che riguarda le nuove tecnologie e scoperte innovative.</p>
                     I miei interessi sono nel campo dell'Intelligenza Artificiale e nello sviluppo di applicazioni legate
-                    all'utilizzo di blockchain. 
+                    all'utilizzo di blockchain.<br>
                     Vorrei ricoprire un ruolo lavorativo che mi permetta di applicare le conoscenze di informatica acquisite durante gli studi.
                 </span>
             </div>
         </div>
         <div id="section">
             <span class="titles-section"> Istruzione </span>
-            <!-- hidden text until clicked-->
-            <span class="text">
+            <span>
                 <ul>
-                    <li><b>Laurea in Informatica presso <a href="https://www.unipi.it/">Università di Pisa</a></b></li>
+                    <li><b>Laurea in Informatica presso</b> <a href="https://www.unipi.it/">Università di Pisa</a></li>
                 </ul>
                 <ul style="list-style: none;">
                     <li>Titolo della tesi: <a href="https://drive.google.com/file/d/1rZJh7UHgRiklxDaTZokwm4Q7NhAtDOjh/view?usp=sharing">A Cryptocurrency Exchange Services Analysis</a></li>
                     <li>
-                        Relatore: <a href="https://pages.di.unipi.it/ricci/">Laura Ricci</a> 
+                        Relatore: <a href="https://pages.di.unipi.it/ricci/">Laura Ricci</a> - 
                         <a href="https://scholar.google.it/citations?user=9u78kdMAAAAJ&amp;hl=it">Damiano Di Francesco Maesa</a>
                     </li>
                     <li>Votazione finale: 94/110</li>
@@ -58,8 +57,7 @@
         </div>
         <div id="section">
             <span class="titles-section"> Esperienze Lavorative </span>
-            <!-- hidden text until clicked-->
-            <span class="text">
+            <span>
                 <ul>
                     <li><b>Tirocinio Curriculare presso Università di Pisa</b></li>
                 </ul>
@@ -69,7 +67,7 @@
                     <li>Data: Marzo 2020 - Aprile 2020</li>
                 </ul>
                 <ul>
-                    <li><b>Stage scolastisco presso <a href="https://www.toplan.it/">TopLan</a></b></li>
+                    <li><b>Stage scolastisco presso</b> <a href="https://www.toplan.it/">TopLan</a></li>
                 </ul>
                 <ul style="list-style: none;">
                     <li>Descrizione: Stage scolastico mirato allo sviluppo di una pagina Web</li>
@@ -78,29 +76,33 @@
             </span>
         </div>
         <div id="section">
-            <span style="color:#161616;" class="titles-section"> Tools </span>
-            <!-- hidden text until clicked-->
-            <span class="text">
-            <a href="BTC_profit.html">Calcolatore guadagno BTC</a>
+            <span class="titles-section"> Tools </span>
+            <span>
+                <ul>
+                    <li><a href="BTC_profit.html">Calcolatore guadagno BTC</a></li>
+                </ul>
+				<ul>
+                    <li><a href="Bit.html">Stato di Bit</a></li>
+                </ul>
             </span>
         </div>
-        
         <script>
             var coll = document.getElementsByClassName("titles-section");
             var i;
 
             for (i = 0; i < coll.length; i++) {
               coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                  content.style.display = "none";
-                } else {
-                  content.style.display = "block";
+                var section = this.parentElement;
+                
+                if (section.id === "section") {
+                  section.id = "section-open";
+                } 
+                else {
+                  section.id = "section";
                 }
               });
             }
-</script>
+        </script>
 	</body>
 </html>
 

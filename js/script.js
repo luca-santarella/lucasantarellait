@@ -32,11 +32,11 @@ function compute_profit(){
             
             if (variation >= 0){
                 resultDiv.style.color = "#FF4500";
-                img.src = 'stonks.jpg';
+                img.src = 'images/stonks.jpg';
             }
             else{
                 resultDiv.style.color = "#9494FF";
-                img.src = 'not-stonks.jpg';
+                img.src = 'images/not-stonks.jpg';
             }
             
             if (profit >= 0)
